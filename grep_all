@@ -1,0 +1,13 @@
+#!/bin/csh
+
+set run_dir = "build/default"
+set list = `ll $run_dir/*case*/irun.log | awk '{print $9}' | sort`
+
+set log = "check_log/all_log"
+date > $log 
+
+
+foreach eachcase ($list)
+    echo "$eachcase" | tee -a $log
+    ./ch/set_check $eachcase $log
+end
