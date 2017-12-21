@@ -1,0 +1,93 @@
+## Chapter 4: list
+
+list data type
+    ['', '', ''] 
+    [1, 2, 3]
+    [['',''],['','','']]
+
+
+index starts at 0, with negative index counting from the backward
+    lista[:2]
+    lista[4:]
+    lista[:]
+
+
+functions
+    len(lista)
+    lista + listb
+    lista*3
+    del lista[idx]
+
+    adding members recursively:
+        names = []
+        while True:
+            print(str(len(names)+1)+':')
+            name = input()
+            names = names + [name]
+
+    for ii in list:
+        print(ii)
+    for idx in range(len(list)):
+        print(str(idx)+'='+list(idx)) # another way to loop through a list w/ index
+
+    in and not in operators
+    'a' in / not in lista
+
+    multiple assignment
+    a, b, c = lista
+
+augmented assignment operators
+    +=, -=
+    *=, /=
+    %=
+
+list methods
+    lista.index('item')
+    lista.append('item')
+    lista.insert(idx, 'item')
+    lista.remove('item')
+    list.sort()
+    list.sort(reverse=True)
+    list.sort(key=str.lower)
+
+strings and tuples (parentheses) are list-like types
+
+conversion
+    list(tuplesa)
+    tuples(lista)
+    list(string)
+
+list reference
+    listb = lista # does not copy over, instead, a reference is set
+    sending list is like sending reference
+
+
+import copy
+    listb= copy.copy(lista)
+
+
+## Chapter 5: dictionaries and structuring data
+braces!
+myCat = {'size':'big','color':'red'}
+
+    methods - keys(), values(), items() 
+        for v in myCat.values():
+        for i in myCat.items():
+        for k, v in myCat.items():
+        list(myCat.keys())
+
+    checking
+        name in myCat.keys()
+
+    methods - get() # to avoid the keyError when not finding keys
+        myCat.get('weight',0)
+
+    methods - setdefault()
+        set values if the key is not there
+        myCat.setdefault('age',0) # this only overwrites age if it is not there
+
+
+
+
+## Chapter 6: 
+

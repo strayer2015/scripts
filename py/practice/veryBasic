@@ -1,0 +1,89 @@
+## Chapter 1: basics
+operator
+    *,-,+
+    **
+    %
+    //  <- integer division
+    /   <- division
+
+data type
+    int
+    floating-point
+    string
+
+string operation
+    ''+''
+    ''*int
+
+basic functions
+    print(''): take string
+    input(): anything to a variable
+    len(''): take string
+
+    str(), int(), float()
+
+## Chapter 2: control
+boolean values
+    True, False
+
+comparison operators
+    ==, !=
+    <, <=
+    >, >=
+    and, or
+    not
+
+flow control
+    conditions
+    blocks of code (clause)
+        begin when the indentation increases
+
+    if statement1:
+    elif statement2:
+    else:
+
+
+    while not statement:
+
+    while True:
+        if statement1:
+            continue
+        if statement2:
+            break
+
+    for ii in range(5):
+
+    for ii in range(0, 10, 2): # 0<=x<12 incremental by 2
+
+
+common modules to import: os, sys, random, math
+    sys.exit()
+
+
+## Chapter 3: functions
+return values and return statements
+    print(getAnswer(random.randint(1,9)))
+
+None type
+    equivalent to null, nil, or undefined
+    print() returns None
+    python adds return None to the end of any function defition with no return statement
+
+keyword argument
+    print('', end='') # avoid new line at the end of print
+    print('','',sep='*') # add seperation in between
+
+local and global scope
+    bad habit to rely on global variables as programs get larger and larger
+    1. a variable defined globally and not defined locally, python considers it a reference to the global variable
+    2. define global varialbe locally give local functions power to overwrite global values
+    3. once a variale is referred as a global one without global overwrite (read-only), python throws out error if local function tries to change it
+
+exception handling
+    try: # it continues if an error is seen instead of crash
+    except ZeroDivisionError:
+
+input validation
+    try: int(input())
+    except ValueError:
+        print('retry')

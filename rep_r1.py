@@ -1,4 +1,3 @@
-#!/org/seg/tools/freeware/python/3.4.3/1/el-6-x86_64/bin/python3
 
 import os,sys,struct
 from binascii import hexlify

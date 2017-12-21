@@ -1,7 +1,6 @@
-#!/bin/csh
 
-set run_dir = "build/default"
-set list = `ll $run_dir/*case*/irun.log | awk '{print $9}' | sort`
+set run_dir = "default"
+set list = `ll $run_dir/*case*/run.log | awk '{print $9}' | sort`
 
 set log = "check_log/all_log"
 date > $log 

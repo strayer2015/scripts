@@ -1,4 +1,3 @@
-#!/org/seg/tools/freeware/perl/5.18.4/1/el-6-x86_64/bin/perl
 use 5.014;
 use Getopt::Std;
 
