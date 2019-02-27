@@ -87,7 +87,28 @@ myCat = {'size':'big','color':'red'}
         myCat.setdefault('age',0) # this only overwrites age if it is not there
 
 
+    nested dictionaries and lists
+        page 118 - loook on how to create 'case' and 'message cluster' dictionaries using nested structure
 
 
-## Chapter 6: 
+## Chapter 6: manipulating strings 
+raw strings:
+    print(r'string')
+multiline strings: triple quotes
+multiline comments: tripple hash character (#)
 
+    methods:    
+        upper(), lower(), isupper(), islower()
+
+        isalnum(), isalpha(), isdecimal(), isspace(), istitle()
+
+        startwith(), endwith()
+
+        join(), split()
+            string.join(['a', 'b', 'c'])
+            string.split() #default is whitespace
+
+        rjust(), ljust(), center()
+            # nice for data print, check page 133
+
+        strip(), rstrip(), lstrip() # removing whitespace
